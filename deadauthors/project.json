@@ -1,0 +1,9 @@
+{
+    "rss": "http://thedeadauthorspodcast.libsyn.com/rss",
+    "guest_pages": {
+        "enable_guest_pages": true,
+        "guest_page_strippers": ["featuring", ",", " and "],
+        "preloaded_entries": [["Andy Daly", [["Andrew Daly", false]]]],
+        "episode_guest_re": "(?:Chapter \\w+|Addendum \\w+|Preface|Appendix \\w+): (.*)"
+    }
+}

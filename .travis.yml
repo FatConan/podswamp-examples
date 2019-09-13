@@ -1,0 +1,24 @@
+language: python
+python: 3.5
+before_install:
+- openssl aes-256-cbc -K $encrypted_8c0946fb277c_key -iv $encrypted_8c0946fb277c_iv
+  -in deploy_script.enc -out ./deploy_script.sh -d
+- openssl aes-256-cbc -K $encrypted_8c0946fb277c_key -iv $encrypted_8c0946fb277c_iv
+  -in deploy_key.enc -out ./deploy_key -d
+- git clone --branch=master https://github.com/FatConan/podswamp.git
+- cd podswamp
+- pip install -r requirements.txt
+- python setup.py install
+- podswamp -h
+script:
+- cd $TRAVIS_BUILD_DIR
+- podswamp spy
+- podswamp nightvale
+- podswamp blacktapes
+- podswamp deadauthors
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: deploy-script.sh
+  on:
+    branch: master

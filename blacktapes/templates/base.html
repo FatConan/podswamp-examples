@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        {% block head %}
+            <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+            <title>{% block title %}{% endblock %}</title>
+            {% block extrahead %}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+    <div class="wrapper">
+        <header><a href="/">{% block podcast_header %}{% endblock %}</a></header>
+        <section class="content">{% block content %}{% endblock %}</section>
+        <footer>
+            <a href='https://www.freepik.com/free-vector/damage-collection-edge-sheet-set_1135063.htm'>Designed by Freepik</a>
+        </footer>
+    </div>
+    </body>
+</html>

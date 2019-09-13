@@ -1,0 +1,34 @@
+{ 
+    "rss": "http://stoppodcastingyourself.libsyn.com/rss",
+    "guest_pages": {
+        "enable_guest_pages": true,
+        "guest_page_strippers": ["LIVE from Very Very Fun Day in Chicago",
+                            " from JFL Northwest", "LIVE, with ", "LIVE with ",
+                            "LIVE from MaxFunCon 2014 with ", "LIVE from MaxFunCon with",
+                            "LIVE from MaxFunCon East", "LIVE from Toronto with",
+                            "LIVE from Victoria with ",
+                            "from the Northwest Podcast Fest", "LIVE from the Canadian Comedy Awards",
+                            "LIVE from Edmonton with ", "LIVE from Edmonton",
+                            "LIVE from Calgary", "Switcheroo Week with ",
+                            ",", " and "],
+        "preloaded_entries": [
+            ["John Beuhler"],
+            ["Graham's dad"],
+            ["Ryan Belleville"],
+            ["Pete Johansson",[["Pete and Courtney Johansson", false]]],
+            ["Courtney Johansson",[["Pete and Courtney Johansson", false]]],
+            [null, [["EVERY SEGMENT!", false], ["", false], ["The Sunday Service", false], ["Pete", false]]],
+            ["Abby Shumka", [["Abby Campbell", true]]],
+            ["Cam MacLeod", [["Cam Macleod", false]]],
+            ["Erica Sigurdson", [["Ricky Dawn Sigurdson", true]]],
+            ["Taz VanRassel", [["6 members of The Sunday Service", false]]],
+            ["Ryan Beil",[["6 members of The Sunday Service", false]]],
+            ["Kevin Lee",[["6 members of The Sunday Service", false]]],
+            ["Emmett Hall",[["6 members of The Sunday Service", false]]],
+            ["Craig Anderson", [["6 members of The Sunday Service", false]]],
+            ["Aaron Read",[["6 members of The Sunday Service", false]]]
+        ],
+        "episode_guest_re": "(?:Episode[ 0-9]+[ \\-]+|Stop Podcasting Yourself[ \\-]+ep\\.[ 0-9]+)(.*)"
+    }
+}
+

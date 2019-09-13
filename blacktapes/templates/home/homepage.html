@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block podcast_header %}{{ title }}{% endblock %}
+{% block content %}
+    <h1>The Black Tapes</h1>
+    <p>From the library of Dr. Strand comes the Black Tapes.</p>
+
+    {% include "/episodes/episodeDetails.html" %}
+
+    <div class="episode-nav">
+        <a href="/episodes_index.html" class="episodes-list" title="View All Episodes">View Episodes List</a>
+    </div>
+{% endblock %}

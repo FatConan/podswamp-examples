@@ -1,0 +1,23 @@
+<div class="episode">
+    <div class="episode-inner">
+        <div class="wrapper">
+            <h1>{% if episode.latest %}LATEST EPISODE &mdash; {% endif %}<span class="tape-label">{{ episode.title }}</span></h1>
+            <p class="published">{{ episode.published.strftime("%B %d, %Y") }}</p>
+            <div class="info">
+                <p class="description">{{ episode.description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio">
+        <audio controls>
+            <source src="{{ episode.media_url }}" type="{{ episode.media_type }}">
+            Your browser does not support the audio element.
+            Download the audio at {{ episode.media_url }}
+        </audio>
+        <div class="next-and-prev">
+            <a class="previous-episode" href="{{ prev_link }}">Previous Episode: <span class="tape-label">{{ prev.title }}</span></a>
+            <a class="next-episode" href="{{ next_link }}">Next Episode: <span class="tape-label">{{  next.title }}</span></a>
+        </div>
+    </div>
+</div>

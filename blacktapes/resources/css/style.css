@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Zeyada');
+html {
+    font-family: 'Josefin Slab', serif;
+    font-size: 16pt;
+}
+
+body {
+    background: #000 url("../img/tapes.png") bottom right no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+}
+
+header a {
+    font-family: 'Zeyada', cursive;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    background: #000;
+    font-size: 20pt;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.5s, color 0.5s;
+}
+
+header a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+h1, h2, h3, h4 {
+
+}
+
+section.content {
+    padding: 20px;
+}
+
+div.next-and-prev a.previous-episode:before {
+    content : " < "
+}
+div.next-and-prev a.next-episode:after {
+    content : " > "
+}
+
+div.episode-nav a,
+div.next-and-prev a {
+    font-size: 14pt;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: background 0.5s, color 0.5s;
+}
+
+div.episode-nav a:hover,
+div.next-and-prev a:hover {
+    background: #fff;
+    color: #000;
+}
+
+span.tape-label {
+    font-family: 'Zeyada', cursive;
+}
+
+audio {
+    background: #000;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+div.episode-inner,
+div.guests-and-episodes {
+    color: #000;
+    background: transparent url(../img/right-paper.png) top left repeat-y;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+div.episode-inner div.wrapper,
+div.guests-and-episodes div.wrapper {
+    background: #fff url(../img/left-paper.png) top right repeat-y;
+    padding-right: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table.guests-and-episodes {
+    border-collapse: collapse;
+    background: #fff;
+    width: 100%;
+}
+
+table.guests-and-episodes td,
+table.guests-and-episodes th {
+    color: #000;
+    padding: 5px 10px;
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+}
+
+table.guests-and-episodes td a {
+    color: red;
+    text-decoration: none;
+    font-family: 'Zeyada', cursive;
+    font-size: 18pt;
+}
+
+footer {
+    padding: 5px 20px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 10pt;
+}
