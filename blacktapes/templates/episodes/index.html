@@ -11,7 +11,7 @@
                     <tbody>
                         {% for episode in episodes %}
                             <tr><td class="number">#{{ episode.position }}</td>
-                                <td class="title"><a href="/episodes/{{ episode.episode_id }}.html" class="ep" title="{{ episode.title }}"><span class="tape-label">{{ episode.title }}</span></a></td>
+                                <td class="title"><a href="/episodes/{{ episode.slug }}.html" class="ep" title="{{ episode.title }}"><span class="tape-label">{{ episode.title }}</span></a></td>
                                 <td class="released">{{ episode.published.strftime("%B %d, %Y") }}</td>
                             </tr>
                         {% endfor %}
