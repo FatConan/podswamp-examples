@@ -3,7 +3,10 @@
     "guest_pages": {
         "enable_guest_pages": true,
         "guest_page_strippers": ["featuring", ",", " and "],
-        "preloaded_entries": [["Andy Daly", [["Andrew Daly", false]]]],
+        "preloaded_entries": [
+            ["Andy Daly", [["Andrew Daly", false]]],
+            ["L. Ron Hubbard"]
+        ],
         "episode_guest_re": "(?:Chapter \\w+|Addendum \\w+|Preface|Appendix \\w+): (.*)"
     }
 }
