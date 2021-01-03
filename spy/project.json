@@ -18,6 +18,7 @@
         "preloaded_entries": [
             ["John Beuhler"],
             ["Graham's dad"],
+            ["Racist Bean Dad", [["John Roderick", false]]],
             ["Ryan Belleville"],
             ["Pete Johansson",[["Pete and Courtney Johansson", false]]],
             ["Courtney Johansson",[["Pete and Courtney Johansson", false]]],
